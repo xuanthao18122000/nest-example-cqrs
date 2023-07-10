@@ -5,7 +5,7 @@ import * as bcrypt from "bcrypt";
 export type PostsDocument = Post & Document;
 
 @Schema({
-  collection: "Post",
+  collection: "posts",
 })
 export class Post {
   _id: string;

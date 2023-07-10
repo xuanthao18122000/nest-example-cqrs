@@ -1,6 +1,6 @@
 import { ICommandHandler, QueryHandler } from "@nestjs/cqrs";
 import { GetPostQuery } from "../queries/get-post.query";
-import { PostRepository } from "src/modules/database/repository/post.repository";
+import { PostRepository } from "src/database/repository/post.repository";
 
 
 @QueryHandler(GetPostQuery)

@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { User, UsersDocument } from "../schemas/user.schema";
 import { Model } from "mongoose";
-import { BaseService } from "src/modules/common/base/base.service";
+import { BaseService } from "src/common/base/base.service";
 
 @Injectable()
 export class PostRepository extends BaseService<UsersDocument> {

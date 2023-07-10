@@ -1,12 +1,12 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import mongoose, { Document } from "mongoose";
 import * as bcrypt from "bcrypt";
-import { USER_GENDER, USER_STATUS, USER_TYPE } from "src/modules/common/constants/user.constant";
+import { USER_GENDER, USER_STATUS, USER_TYPE } from "src/common/constants/user.constant";
 
 export type UsersDocument = User & Document;
 
 @Schema({
-  collection: "User",
+  collection: "users",
 })
 export class User {
   _id: string;
